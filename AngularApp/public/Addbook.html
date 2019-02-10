@@ -1,0 +1,16 @@
+<h2>Add New Books</h2>
+<form>
+    Name: <input type="text" name="name" ng-model="nm" placeholder="Book Name"><br><br>
+    ISBN: <input type="text" name="isbn" ng-model="isb" placeholder="Book ISBN"><br><br>
+    Author: <select id="author" name="author" ng-model="auth" ng-options="author.fname +' '+ author.lname as author.fname +' '+ author.lname for author in Authorfact.data">
+                <option value="" label="---Select Author"></option>
+            </select><br><br>
+    Price (Rs.): <input type="number" name="price" ng-model="pri"><br><br>
+    Year: <input type="text" name="year" ng-model="yr"><br><br>
+    Publisher: <input type="text" name="publisher" ng-model="pub"><br><br>
+
+    <input type="submit" name="add" value="Add" ng-click="addBook()"> <input type="reset" name="reset" value="Reset"><br><br>
+</form>
+
+<a href="#/!">Back</a>
+
