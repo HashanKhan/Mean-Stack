@@ -1,5 +1,6 @@
 # Mean-Stack
-Library App
+A simple Library application contain books and authors.
+
 
 Main methods to use
 
